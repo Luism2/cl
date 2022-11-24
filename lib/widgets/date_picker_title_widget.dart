@@ -1,6 +1,6 @@
 import 'package:register/res/colors.dart';
-import 'package:register/utills/constants.dart';
-import 'package:register/utills/extensions.dart';
+import 'package:register/utils/constants.dart';
+import 'package:register/utils/extensions.dart';
 import 'package:flutter/material.dart';
 
 class DatePickerTitle extends StatelessWidget {

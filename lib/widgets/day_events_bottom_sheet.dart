@@ -1,6 +1,6 @@
 import 'package:cr_calendar/cr_calendar.dart';
-import 'package:register/utills/constants.dart';
-import 'package:register/utills/extensions.dart';
+import 'package:register/utils/constants.dart';
+import 'package:register/utils/extensions.dart';
 import 'package:flutter/material.dart';
 
 /// Draggable bottom sheet with events for the day.
@@ -23,7 +23,7 @@ class DayEventsBottomSheet extends StatelessWidget {
         expand: false,
         builder: (context, controller) {
           return events.isEmpty
-              ? const Center(child: Text('No events for this day'))
+              ? const Center(child: Text('No hay eventos para este dia'))
               : ListView.builder(
                   controller: controller,
                   itemCount: events.length + 1,

@@ -1,7 +1,7 @@
 import 'package:cr_calendar/cr_calendar.dart';
 import 'package:register/res/colors.dart';
-import 'package:register/utills/constants.dart';
-import 'package:register/utills/extensions.dart';
+import 'package:register/utils/constants.dart';
+import 'package:register/utils/extensions.dart';
 import 'package:register/widgets/date_picker_title_widget.dart';
 import 'package:register/widgets/picker_day_item_widget.dart';
 import 'package:register/widgets/week_days_widget.dart';
@@ -20,7 +20,7 @@ class _CreateEventDialogState extends State<CreateEventDialog> {
   int _selectedColorIndex = 0;
   final _eventNameController = TextEditingController();
 
-  String _rangeButtonText = 'Select date';
+  String _rangeButtonText = 'Selecciona el dia ';
 
   DateTime? _beginDate;
   DateTime? _endDate;
@@ -49,7 +49,7 @@ class _CreateEventDialogState extends State<CreateEventDialog> {
               children: [
                 /// Dialog title.
                 const Text(
-                  'Event creating',
+                  'Creacion de evento',
                   style: TextStyle(
                     color: violet,
                     fontWeight: FontWeight.bold,
@@ -65,7 +65,7 @@ class _CreateEventDialogState extends State<CreateEventDialog> {
                     enabledBorder: UnderlineInputBorder(
                       borderSide: BorderSide(color: violet.withOpacity(1)),
                     ),
-                    hintText: 'Enter the event name',
+                    hintText: 'Nombre del evento y hora ',
                     hintStyle:
                         TextStyle(color: violet.withOpacity(0.6), fontSize: 16),
                   ),
@@ -75,7 +75,7 @@ class _CreateEventDialogState extends State<CreateEventDialog> {
 
                 /// Color selection section.
                 const Text(
-                  'Select event color',
+                  'Selecciona el color',
                   style: TextStyle(
                     fontSize: 16,
                     color: violet,

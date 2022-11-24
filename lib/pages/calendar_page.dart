@@ -1,7 +1,7 @@
 import 'package:cr_calendar/cr_calendar.dart';
 import 'package:register/res/colors.dart';
-import 'package:register/utills/constants.dart';
-import 'package:register/utills/extensions.dart';
+import 'package:register/utils/constants.dart';
+import 'package:register/utils/extensions.dart';
 import 'package:register/widgets/create_event_dialog.dart';
 import 'package:register/widgets/day_events_bottom_sheet.dart';
 import 'package:register/widgets/day_item_widget.dart';
@@ -145,8 +145,8 @@ class _CalendarPageState extends State<CalendarPage> {
       events: [
         CalendarEventModel(
           name: 'Conferencia Amar a madrazos 8am 9pm/ Diana Flores Ahuatzin ',
-          begin: DateTime(now.year, now.month, (now.day).clamp(1, 28)),
-          end: DateTime(now.year, now.month, (now.day).clamp(1, 28)),
+          begin: DateTime(now.year, now.month, (now.day).clamp(1, 2)),
+          end: DateTime(now.year, now.month, (now.day).clamp(1, 1)),
           eventColor: eventColors[0],
         ),
         CalendarEventModel(
@@ -158,19 +158,19 @@ class _CalendarPageState extends State<CalendarPage> {
         CalendarEventModel(
           name: 'Reunion con alumnos de DENAM 10am 12pm/ Francisco Javier',
           begin: DateTime(now.year, now.month, (now.day).clamp(1, 3)),
-          end: DateTime(now.year, now.month + 1, (now.day).clamp(1, 2)),
+          end: DateTime(now.year, now.month, (now.day).clamp(1, 2)),
           eventColor: eventColors[2],
         ),
         CalendarEventModel(
           name: 'Reuinion con laumnos de IDGS 11am 12pm/ Francisco Javier',
-          begin: DateTime(now.year, now.month - 1, (now.day).clamp(1, 28)),
-          end: DateTime(now.year, now.month + 1, (now.day + 5).clamp(1, 28)),
+          begin: DateTime(now.year, now.month, (now.day).clamp(1, 1)),
+          end: DateTime(now.year, now.month, (now.day).clamp(1, 1)),
           eventColor: eventColors[3],
         ),
         CalendarEventModel(
           name: 'Demostracion de competencias 10am 12pm/ Francisco Javier',
-          begin: DateTime(now.year, now.month + 1, (now.day).clamp(1, 3)),
-          end: DateTime(now.year, now.month + 2, (now.day).clamp(1, 3)),
+          begin: DateTime(now.year, now.month, (now.day).clamp(2, 2)),
+          end: DateTime(now.year, now.month, (now.day).clamp(2, 2)),
           eventColor: eventColors[4],
         ),
       ],
