@@ -11,19 +11,20 @@ import 'package:flutter/material.dart';
 
 /// Main calendar page.
 class CalendarPage extends StatefulWidget {
+  static String tag = 'CalendarPage';
   const CalendarPage({super.key});
 
   @override
-  _CalendarPageState createState() => _CalendarPageState();
+  _CalendarPage createState() => _CalendarPage();
 }
 
-class _CalendarPageState extends State<CalendarPage> {
+class _CalendarPage extends State<CalendarPage>
+    with SingleTickerProviderStateMixin {
   final _currentDate = DateTime.now();
 
   late CrCalendarController _calendarController;
   late String _appbarTitle;
   late String _monthName;
-
   @override
   void initState() {
     _setTexts(_currentDate.year, _currentDate.month);
@@ -43,11 +44,11 @@ class _CalendarPageState extends State<CalendarPage> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        centerTitle: false,
-        title: Text(_appbarTitle),
+        centerTitle: true,
+        title: Text('Calendar web app'),
         actions: [
           IconButton(
-            tooltip: 'Ir al dia',
+            tooltip: 'Ir al dia actual',
             icon: const Icon(Icons.calendar_today),
             onPressed: _showCurrentMonth,
           ),
