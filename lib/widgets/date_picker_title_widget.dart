@@ -20,7 +20,7 @@ class DatePickerTitle extends StatelessWidget {
           date.format(kMonthFormatWidthYear),
           style: const TextStyle(
             fontSize: 21,
-            color: violet,
+            color: green,
             fontWeight: FontWeight.w500,
           ),
         ));

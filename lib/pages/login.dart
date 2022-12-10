@@ -14,29 +14,29 @@ class _LoginPageState extends State<LoginPage> {
     final logo = Hero(
       tag: 'hero',
       child: CircleAvatar(
-        backgroundColor: Colors.transparent,
-        radius: 250.0,
+        backgroundColor: Color.fromARGB(255, 241, 129, 55),
+        radius: 120.0,
         child: Image.asset('assets/utt_logo_ver_6.png'),
       ),
     );
 
     final email = TextFormField(
       keyboardType: TextInputType.emailAddress,
-      autofocus: false,
-      initialValue: 'alucard@gmail.com',
+      autofocus: true,
+      initialValue: '',
       decoration: InputDecoration(
-        hintText: 'Email',
+        hintText: 'Usuario',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
       ),
     );
 
     final password = TextFormField(
-      autofocus: false,
-      initialValue: 'some password',
-      obscureText: true,
+      autofocus: true,
+      initialValue: '',
+      obscureText: false,
       decoration: InputDecoration(
-        hintText: 'Password',
+        hintText: 'contraseña',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
       ),
@@ -52,21 +52,21 @@ class _LoginPageState extends State<LoginPage> {
           Navigator.of(context).pushNamed(CalendarPage.tag);
         },
         padding: EdgeInsets.all(12),
-        color: Colors.lightBlueAccent,
-        child: Text('Log In', style: TextStyle(color: Colors.white)),
+        color: Color.fromARGB(255, 68, 155, 76),
+        child: Text('Entrar', style: TextStyle(color: Colors.white)),
       ),
     );
 
     final forgotLabel = MaterialButton(
       child: Text(
-        'Forgot password?',
-        style: TextStyle(color: Colors.black54),
+        'olvidaste tu contraseña?',
+        style: TextStyle(color: Color.fromARGB(255, 255, 254, 254)),
       ),
       onPressed: () {},
     );
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 21, 160, 68),
       body: Center(
         child: ListView(
           shrinkWrap: true,

@@ -29,12 +29,12 @@ class PickerDayItemWidget extends StatelessWidget {
                     child: Container(
                         color: properties.isFirstInRange
                             ? Colors.transparent
-                            : violet.withOpacity(0.4))),
+                            : green.withOpacity(0.4))),
                 Expanded(
                     child: Container(
                         color: properties.isLastInRange
                             ? Colors.transparent
-                            : violet.withOpacity(0.4))),
+                            : green.withOpacity(0.4))),
               ],
             ),
           Container(
@@ -43,7 +43,7 @@ class PickerDayItemWidget extends StatelessWidget {
               color: properties.isFirstInRange ||
                       properties.isLastInRange ||
                       properties.isSelected
-                  ? violet
+                  ? green
                   : Colors.transparent,
             ),
             child: Center(
@@ -51,8 +51,7 @@ class PickerDayItemWidget extends StatelessWidget {
                   style: TextStyle(
                       color: properties.isInRange || properties.isSelected
                           ? Colors.white
-                          : violet
-                              .withOpacity(properties.isInMonth ? 1 : 0.5))),
+                          : green.withOpacity(properties.isInMonth ? 1 : 0.5))),
             ),
           ),
         ],

@@ -51,7 +51,7 @@ class _CreateEventDialogState extends State<CreateEventDialog> {
                 const Text(
                   'Creacion de evento',
                   style: TextStyle(
-                    color: violet,
+                    color: green,
                     fontWeight: FontWeight.bold,
                     fontSize: 18,
                   ),
@@ -59,15 +59,15 @@ class _CreateEventDialogState extends State<CreateEventDialog> {
 
                 /// Event name input field.
                 TextField(
-                  cursorColor: violet,
-                  style: const TextStyle(color: violet, fontSize: 16),
+                  cursorColor: green,
+                  style: const TextStyle(color: green, fontSize: 16),
                   decoration: InputDecoration(
                     enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(color: violet.withOpacity(1)),
+                      borderSide: BorderSide(color: green.withOpacity(1)),
                     ),
                     hintText: 'Nombre del evento y hora ',
                     hintStyle:
-                        TextStyle(color: violet.withOpacity(0.6), fontSize: 16),
+                        TextStyle(color: green.withOpacity(0.6), fontSize: 16),
                   ),
                   controller: _eventNameController,
                 ),
@@ -78,7 +78,7 @@ class _CreateEventDialogState extends State<CreateEventDialog> {
                   'Selecciona el color',
                   style: TextStyle(
                     fontSize: 16,
-                    color: violet,
+                    color: green,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -102,7 +102,8 @@ class _CreateEventDialogState extends State<CreateEventDialog> {
                               foregroundDecoration: BoxDecoration(
                                 border: index == _selectedColorIndex
                                     ? Border.all(
-                                        color: Colors.black.withOpacity(0.3),
+                                        color: Color.fromARGB(255, 245, 161, 35)
+                                            .withOpacity(0.3),
                                         width: 2)
                                     : null,
                                 shape: BoxShape.circle,
@@ -126,14 +127,14 @@ class _CreateEventDialogState extends State<CreateEventDialog> {
                     children: [
                       const Icon(
                         Icons.calendar_today_outlined,
-                        color: violet,
+                        color: green,
                       ),
                       const SizedBox(width: 8),
                       Text(
                         _rangeButtonText,
                         style: const TextStyle(
                           fontSize: 16,
-                          color: violet,
+                          color: green,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -241,20 +242,20 @@ class _CreateEventDialogState extends State<CreateEventDialog> {
           height: 24,
           width: 54,
           decoration: BoxDecoration(
-            color: isPicked ? violet : Colors.white,
+            color: isPicked ? green : Colors.white,
             borderRadius: const BorderRadius.all(Radius.circular(8)),
           ),
           child: Center(
             child: Text(year.toString(),
                 style: TextStyle(
-                    color: isPicked ? Colors.white : violet, fontSize: 16)),
+                    color: isPicked ? Colors.white : orange, fontSize: 16)),
           ),
         ),
         controlBarTitleBuilder: (date) => Text(
           DateFormat(kAppBarDateFormat).format(date),
           style: const TextStyle(
             fontSize: 16,
-            color: violet,
+            color: orange,
             fontWeight: FontWeight.normal,
           ),
         ),

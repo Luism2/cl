@@ -1,3 +1,5 @@
+import 'dart:js_util';
+
 import 'package:register/pages/calendar_page.dart';
 import 'package:register/res/colors.dart';
 import 'package:flutter/material.dart';
@@ -15,18 +17,18 @@ class _principal_app extends State<principal_app> {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         floatingActionButtonTheme:
-            const FloatingActionButtonThemeData(backgroundColor: violet),
-        primaryColor: violet,
-        colorScheme: ColorScheme.fromSwatch().copyWith(secondary: violet),
-        iconTheme: const IconThemeData(color: violet),
+            const FloatingActionButtonThemeData(backgroundColor: green),
+        primaryColor: orange,
+        colorScheme: ColorScheme.fromSwatch().copyWith(secondary: orange),
+        iconTheme: const IconThemeData(color: green),
         outlinedButtonTheme: OutlinedButtonThemeData(
           style: OutlinedButton.styleFrom(
             textStyle: const TextStyle(
-              color: violet,
+              color: green,
               fontSize: 16,
               fontWeight: FontWeight.w500,
             ),
-            foregroundColor: violet,
+            foregroundColor: green,
             shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(Radius.circular(8))),
           ),
@@ -39,7 +41,7 @@ class _principal_app extends State<principal_app> {
             ),
             shadowColor: Colors.transparent,
             elevation: 0,
-            foregroundColor: violet,
+            foregroundColor: green,
             shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(Radius.circular(8))),
           ),

@@ -73,7 +73,7 @@ class _CalendarPage extends State<CalendarPage>
               Text(
                 _monthName,
                 style: const TextStyle(
-                    fontSize: 16, color: violet, fontWeight: FontWeight.w600),
+                    fontSize: 16, color: green, fontWeight: FontWeight.w600),
               ),
               IconButton(
                 icon: const Icon(Icons.arrow_forward_ios),

@@ -21,7 +21,7 @@ class WeekDaysWidget extends StatelessWidget {
         child: Text(
           describeEnum(day).substring(0, 1).toUpperCase(),
           style: TextStyle(
-            color: violet.withOpacity(0.9),
+            color: orange.withOpacity(0.9),
           ),
         ),
       ),

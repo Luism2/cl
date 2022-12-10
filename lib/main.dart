@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Class',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.lightBlue,
+        primarySwatch: Colors.deepOrange,
         fontFamily: 'Nunito',
       ),
       home: LoginPage(),

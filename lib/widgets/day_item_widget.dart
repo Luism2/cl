@@ -15,7 +15,7 @@ class DayItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          border: Border.all(color: violet.withOpacity(0.3), width: 0.3)),
+          border: Border.all(color: green.withOpacity(0.3), width: 0.3)),
       child: Stack(
         children: [
           Container(
@@ -25,7 +25,7 @@ class DayItemWidget extends StatelessWidget {
               height: 18,
               width: 18,
               decoration: BoxDecoration(
-                color: properties.isCurrentDay ? violet : Colors.transparent,
+                color: properties.isCurrentDay ? green : Colors.transparent,
                 shape: BoxShape.circle,
               ),
               child: Center(
@@ -33,7 +33,7 @@ class DayItemWidget extends StatelessWidget {
                     style: TextStyle(
                         color: properties.isCurrentDay
                             ? Colors.white
-                            : violet
+                            : green
                                 .withOpacity(properties.isInMonth ? 1 : 0.5))),
               ),
             ),
@@ -46,7 +46,7 @@ class DayItemWidget extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 10,
                       color:
-                          violet.withOpacity(properties.isInMonth ? 1 : 0.5))),
+                          green.withOpacity(properties.isInMonth ? 1 : 0.5))),
             ),
         ],
       ),

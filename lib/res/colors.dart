@@ -1,7 +1,8 @@
 import 'package:register/widgets/event_widget.dart';
 import 'package:flutter/cupertino.dart';
 
-const violet = Color(0xff7F51F5);
+const green = Color.fromARGB(255, 33, 153, 17);
+const orange = Color.fromRGBO(255, 128, 0, 20);
 
 /// Colors for [EventWidget].
 const eventColors = [
